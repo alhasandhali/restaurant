@@ -1,0 +1,870 @@
+/* =========================================================
+                    Common CSS Start
+=========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.just_cont {
+    justify-content: flex-end;
+}
+
+.just_cont_mid {
+    justify-content: center;
+}
+
+.space_btwn {
+    justify-content: space-between;
+}
+
+.align_item {
+    align-items: center;
+}
+
+:root {
+    --white: #fff;
+    --gu: #cc9900;
+    --shai: #4c4c4c;
+    --foot: #191919;
+}
+
+/* =========================================================
+                    Common CSS End
+=========================================================== */
+/* =========================================================
+                    Menu CSS Start
+=========================================================== */
+#menu {
+    height: 110px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 999;
+}
+
+.logo {
+    width: 20%;
+    line-height: 110px;
+}
+
+.main_menu {
+    width: 80%;
+}
+
+.main_menu ul li a {
+    margin: 0 25px;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #fff;
+    line-height: 110px;
+}
+
+.main_menu ul li a:hover {
+    border-top: 3px solid #fff;
+    line-height: 104px;
+}
+
+/* =========================================================
+                    Menu CSS End
+=========================================================== */
+/* =========================================================
+                    Banner CSS Start
+=========================================================== */
+.banner1 {
+    padding: 240px 0 140px;
+}
+
+.ban_text {
+    text-align: center;
+}
+
+.ban_text img {
+    margin-left: 510px;
+}
+
+.ban_text h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 145px;
+    margin-bottom: 30px;
+}
+
+.ban_text .button {
+    margin-top: 34px;
+}
+
+.ban_text .button a {
+    padding: 22px 52px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin: 0 15px;
+}
+
+.ban_text .button a:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #000;
+}
+
+.prev,
+.next {
+    width: 40px;
+    height: 40px;
+    background: hsla(45, 100%, 40%, 0.7);
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 15px 10px 15px 10px;
+    -webkit-border-radius: 15px 10px 15px 10px;
+    -moz-border-radius: 15px 10px 15px 10px;
+    -ms-border-radius: 15px 10px 15px 10px;
+    -o-border-radius: 15px 10px 15px 10px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+#banner .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 254, 254, 0.5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#banner .slick-dots li.slick-active button{
+    background: hsla(45, 100%, 40%, 0.7);
+    border: 1px solid var(--gu);
+    width: 15px;
+    height: 15px;
+}
+
+/* =========================================================
+                    Banner CSS End
+=========================================================== */
+/* =========================================================
+                    Cook CSS Start
+=========================================================== */
+#cook {
+    padding: 75px 0;
+}
+
+.cook_text {
+    width: 45%;
+    text-align: center;
+    padding-left: 145px;
+    margin-top: 45px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.cook_text h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--gu);
+    margin-bottom: 15px;
+}
+
+.cook_text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--shai);
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.cook_sign img {
+    position: absolute;
+    right: 64px;
+    bottom: 75px;
+}
+
+.plate {
+    width: 52.60%;
+}
+
+/* =========================================================
+                    Cook CSS End
+=========================================================== */
+
+/* =========================================================
+                    Ingredients Purchase CSS Start
+=========================================================== */
+#ingre {
+    padding: 100px 0;
+}
+
+.text_box {
+    width: 557px;
+    background: rgba(0, 0, 0, 0.67);
+    float: right;
+    margin-right: 40px;
+    text-align: center;
+    padding-top: 83px;
+    padding-bottom: 78px;
+}
+
+.text_box h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.text_box p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    padding: 0 70px;
+    margin-top: 22px;
+    margin-bottom: 70px;
+}
+
+.box_img img {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 15px;
+}
+
+/* =========================================================
+                    Ingredients Purchase CSS End
+=========================================================== */
+
+/*===============================================================
+                        Dish part Start
+===============================================================*/
+#dish {
+    padding: 100px 0 30px;
+}
+
+.dishes .sam_one {
+    width: 50%;
+    padding: 0 90px 0 125px;
+    background: transparent;
+    text-align: center;
+}
+
+.dishes .sam_two {
+    width: 50%;
+    padding: 0 125px 0 90px;
+    background: transparent;
+    text-align: center;
+}
+
+.sam_last {
+    margin-top: -89px;
+}
+
+.dishes .sam_fst {
+    margin-bottom: 70px;
+}
+
+.dishes .sam_second {
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.dishes .sam .item {
+    margin-top: 25px;
+}
+
+.dishes .sam img {
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+
+.dishes .sam h4 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gu);
+}
+
+.dishes .sam ul {
+    border-bottom: 1px solid var(--gu);
+}
+
+.dishes .sam ul li p {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    color: var(--gu);
+}
+
+.dishes .sam p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--shai);
+    text-align: left;
+    margin-top: 10px;
+}
+/*===================================================================
+                        Disht part End
+===================================================================*/
+
+/*===================================================================
+                        Review part Start
+===================================================================*/
+.fade .review {
+    padding: 100px 0;
+}
+
+.fade .review_box {
+    width: 61.60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 85px 75px 105px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.fade .review_box img {
+    margin: 0 218px;
+}
+
+.fade .review_box h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.fade .review_box .coma {
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    font-size: 86px;
+    color: #f2f4f4;
+    text-align: left;
+}
+
+.fade .review_box p {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #dde0df;
+    line-height: 45px;
+    margin-top: 20px;
+}
+
+.fade .review_box p span {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.prev,
+.next {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 15px 10px 15px 10px;
+    -webkit-border-radius: 15px 10px 15px 10px;
+    -moz-border-radius: 15px 10px 15px 10px;
+    -ms-border-radius: 15px 10px 15px 10px;
+    -o-border-radius: 15px 10px 15px 10px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.fade .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.fade .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fade .slick-dots li.slick-active button{
+    background: hsla(45, 100%, 40%, 0.7);
+    border: 1px solid #000;
+    width: 15px;
+    height: 15px;
+}
+/*===================================================================
+                        Review part End
+===================================================================*/
+
+/*===================================================================
+                        Booking part Start
+===================================================================*/
+#booking {
+    padding: 100px 0;
+}
+
+.book_img {
+    width: 55%;
+    margin-right: 10px;
+}
+
+.book_img img {
+    margin: 0 30px;
+    height: 100%;
+    max-height: 100%;
+}
+.book_img img:nth-child(2) {
+    margin-left: -5px;
+}
+
+.book_text {
+    width: 44.20%;
+    text-align: center;
+    padding: 0 110px 0 0;
+}
+
+.book_text h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gu);
+    margin-bottom: 15px;
+}
+
+.book_text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--shai);
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.book_text p span {
+    display: block;
+    margin-top: 10px;
+}
+
+.book_text form {
+    width: 100%;
+}
+
+.book_text form ul {
+    margin-top: 40px;
+}
+
+.book_text form ul li {
+    width: 46.15%;
+    margin-right: 30px;
+}
+
+.book_text form ul li label {
+    display: block;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--gu);
+    margin-bottom: 5px;
+}
+
+.book_text form ul li:nth-child(2),
+.book_text form ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+.book_text form ul li:nth-child(3),
+.book_text form ul li:nth-child(4) {
+    margin-top: 25px;
+}
+
+.book_text form input {
+    width: 100%;
+    height: 34px;
+    border: 1px solid #c8c6c6;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.4);
+
+}
+
+.book_text form select {
+    width: 100%;
+    height: 34px;
+    border: 1px solid #c8c6c6;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.4);
+
+}
+
+.book_text form select {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+.book_text form input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+.book_text form button {
+    padding: 12px 60px;
+    background: var(--gu);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+.book_text button {
+    padding: 12px 60px;
+    background: var(--gu);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+/*===================================================================
+                        Booking part End
+===================================================================*/
+/*===================================================================
+                            Footer part Start
+===================================================================*/
+#foot {
+    padding: 60px 0 70px;
+    background: var(--foot);
+}
+
+.common_head {
+    width: 33.33%;
+    text-align: center;
+}
+
+.common_head h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.about p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    margin-top: 18px;
+    padding: 0px 30px;
+}
+
+.about p span {
+    display: block;
+}
+
+.open p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 23px;
+}
+
+.open p span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.open p:nth-child(4) {
+    margin-top: 5px;
+}
+
+.open ul li {
+    margin: 52px 5.5px 0;
+}
+
+.open ul li a i {
+    font-size: 16px;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.open ul li a .fa-cc-amex:hover {
+    color: #002663;
+}
+
+.open ul li a .fa-cc-paypal:hover {
+    color: #169bd7;
+}
+
+.open ul li a .fa-cc-visa:hover {
+    color: #f7b600;
+}
+
+.open ul li a .fa-cc-discover:hover {
+    color: #e55c20;
+}
+
+.location p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 23px;
+}
+
+.location p span {
+    display: block;
+    margin-top: 7px;
+}
+
+.location ul li {
+    margin: 52px 5.5px 0;
+}
+
+.location ul li a i {
+    font-size: 16px;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.location ul li a .fa-facebook-f:hover {
+    color: #4267b2;
+}
+
+.location ul li a .fa-youtube-square:hover {
+    color: #ff0000;
+}
+
+.location ul li a .fa-trello:hover {
+    color: #0079bf;
+}
+
+.location ul li a .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+/*===================================================================
+                            Footer part End
+===================================================================*/
+/*===================================================================
+                        Buttom to Top part Start
+===================================================================*/
+.btn {
+    width: 40px;
+    height: 40px;
+    background: var(--gu);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    display: none;
+}
+/*===================================================================
+                        Buttom to Top part End
+===================================================================*/
+/*===================================================================
+                        Div Rotation part Start
+===================================================================*/
+
+/* #plate1 {
+    animation: rotation 30s infinite linear;
+    -webkit-animation: rotation 30s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        }
+    to {
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+    }
+}
+@-moz-keyframes rotation {
+from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    }
+to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+}
+}
+
+#ingrediant {
+    animation: rotation 10s infinite linear;
+    -webkit-animation: rotation 10s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        }
+    to {
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+    }
+}
+@-moz-keyframes rotation {
+from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    }
+to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+}
+} */
+/*===================================================================
+                    Div Rotation part End
+===================================================================*/
